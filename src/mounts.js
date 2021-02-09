@@ -27,4 +27,8 @@ export const mounts = [
     key: 'closeButtonHtml',
     getter: swal => swal.getCloseButton(),
   },
+  {
+    key: 'icon',
+    getter: swal => swal.getIcon(),
+  },
 ]

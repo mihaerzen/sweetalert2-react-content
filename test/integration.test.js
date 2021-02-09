@@ -26,6 +26,7 @@ describe('integration', () => {
       cancelButtonText: <span>cancelButtonText</span>,
       closeButtonHtml: <span>closeButtonHtml</span>,
       footer: <span>footer</span>,
+      iconHtml: <span>iconHtml</span>,
       didOpen: () => {
         expect(MySwal.getTitle().innerHTML).toEqual('<span>title</span>')
         expect(MySwal.getHtmlContainer().innerHTML).toEqual('<span>html</span>')
@@ -40,6 +41,7 @@ describe('integration', () => {
         )
         expect(MySwal.getFooter().innerHTML).toEqual('<span>footer</span>')
         expect(MySwal.getCloseButton().innerHTML).toEqual('<span>closeButtonHtml</span>')
+        expect(MySwal.getIcon().innerHTML).toEqual('<span>iconHtml</span>')
         MySwal.clickConfirm()
       },
     })
